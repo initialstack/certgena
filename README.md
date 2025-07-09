@@ -22,7 +22,7 @@ A C++ tool for generating Certificate Authority (CA) keys, certificates, Diffie-
 Clone the repository and build using the provided Makefile:
 
 ```
-$ git clone https://github.com/yourusername/certgen.git
+$ git clone https://github.com/initialstack/certgen.git
 $ cd certgen
 $ make
 ```
@@ -46,12 +46,4 @@ $ ./certgen -h
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/initialstack/certgen/issues).
-
-## Contact
-
-Created by [initialstack](https://github.com/initialstack) - feel free to contact me!
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
