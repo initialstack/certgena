@@ -65,7 +65,7 @@ void CertificateGenerator::generateCert(
     const std::string& extOpts
 ) {
     std::cout << "Generating certificate: " << certPath << " with CN=" << cn << "...\n";
-    std::string subj = "/C=RU/ST=Moscow/L=Moscow/O=Malikov/OU=InitialStack/CN=" + cn + "/emailAddress=a0xh@4ifi.ru";
+    std::string subj = "/C=RU/ST=Moscow/L=Moscow/O=Vladislav/OU=InitialStack/CN=" + cn + "/emailAddress=test@mail.ru";
     std::string cmd = "openssl req -new -sha256 -key " + keyPath + " -subj \"" + subj + "\" | "
                       "openssl x509 -req -sha256 "
                       "-CA " + caCert_ + " "
@@ -134,7 +134,7 @@ void CertificateGenerator::generateCA(
         std::string cmd = "openssl req -x509 -new -nodes -sha256 "
                           "-key " + keyPath + " "
                           "-days 3650 "
-                          "-subj \"/C=RU/ST=Moscow/L=Moscow/O=Malikov/OU=InitialStack/CN=localhost/emailAddress=a0xh@4ifi.ru\" "
+                          "-subj \"/C=RU/ST=Moscow/L=Moscow/O=Vladislav/OU=InitialStack/CN=localhost/emailAddress=test@mail.ru\" "
                           "-out " + certPath;
 
         if (!executor_->execute(cmd)) {
